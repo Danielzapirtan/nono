@@ -1,23 +1,18 @@
 * {
-  font-size: 4vw;
+  --width: 72mm;
+  --height: 160mm;
+  overflow-x: auto;
+  overflow-y: auto;
+  font-family: Monospace;
+  font-size: 5mm;
 }
 
-button {
-  background-color: olive;
-  text-align: center;
-  color: white;
-  height: 6vw;
-  width: 5vw;
+.viewport {
+  width: var(--width);
+  height: var(--height);
+  border: 3px solid #222;
+  background-color: #eee;
+  margin-left: 10mm;
+  margin-top: 10mm;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.cell {
-  border: 1px solid #222;
-  min-width: 13vw;
-  max-width: 13vw;
-  text-align: center;
-}
