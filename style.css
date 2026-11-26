@@ -1,0 +1,23 @@
+* {
+  font-size: 4vw;
+}
+
+button {
+  background-color: olive;
+  text-align: center;
+  color: white;
+  height: 6vw;
+  width: 5vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  border: 1px solid #222;
+  min-width: 13vw;
+  max-width: 13vw;
+  text-align: center;
+}
