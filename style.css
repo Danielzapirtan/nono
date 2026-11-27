@@ -16,7 +16,9 @@
   margin-top: 10mm;
 }
 
-.slider-container {
+.controls {
+  display: block flex;
+  flex-direction: row;
   width: 68mm;
   height: 10mm;
   border: 1mm solid #222;
@@ -25,9 +27,20 @@
   margin-top: 2mm;
 }
 
-.slider {
-  width: 64mm;
-  color: magenta;
+.flag {
+  margin-left: 22mm;
+  width: 9mm;
+  height: 8mm;
+  align: right;
+  background-color: green;
+}
+
+.flag.done {
+  background-color: blue;
+}
+
+.flag.error {
+  background-color: red;
 }
 
 .tab {
@@ -48,15 +61,12 @@
   flex-direction: column;
   width: 56mm;
   border: 1mm solid #222;
-  height: 96mm;
+  height: 136mm;
   margin-left: 2mm;
   margin-top: 2mm;
 }
 
 .numar-note {
-}
-
-.note {
 }
 
 .digit {
@@ -65,5 +75,9 @@
 .button {
   background-color: olive;
   color: white;
+  .nav {
+    width: 6mm;
+    height: 5mm;
+  }
 }
 

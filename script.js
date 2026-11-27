@@ -1,7 +1,7 @@
-const materii = [];
-const module = [];
-const medii = [];
-const note = [];
+const nrNoteLuate = document.getElementById("numar-note-luate");
+const noteLuate = document.getElementById("note-luate");
+const nrNoteDeLuat = document.getElementById("numar-note-de-luat");
+const noteDeLuat = document.getElementById("note-de-luat");
 
 function calc_medii() { }
 function renderAll() { }
@@ -36,4 +36,37 @@ function fwd() {
   currtab = (currtab + 1) % 2;
   switchTab(currtab);
 }
+
+function addDigit(el, min, max) {
+  const lt = document.createElement("div");
+  lt.classList.add("button nav");
+  const cifra = document.createElement("div");
+  cifra.classList.add("digit");
+  cifra.style.min = min;
+  cifra.style.max = max;
+  cifra.innerHTML = `${6}`;
+  const gt = document.createElement("div");
+  gt.classList.add("button nav");
+  el.appendChild(lt);
+  el.appendChild(gt);
+  el.appendChild(cifra);
+}
+
+function addNumber(el) {
+  addDigit(el, 1, 4);
+}
+
+function addDigits(el, number, baseMark) {
+  for (let i = 0; i < number; i++)
+    addDigit(el, baseMark + 1, 10);
+}
+
+function loadPage() {
+  addNumber(nrNoteLuate);
+  addDigits(noteLuate, 1, 6);
+  addNumber(nrNoteDeLuat);
+  addDigits(noteDeLuat, 1, 7);
+}
+
+loadPage();
 
