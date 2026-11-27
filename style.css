@@ -43,14 +43,23 @@
   display: none;
 }
 
-.buget-container {
+.container {
   display: block flex;
   flex-direction: column;
   width: 56mm;
   border: 1mm solid #222;
-  height: 32mm;
+  height: 96mm;
   margin-left: 2mm;
   margin-top: 2mm;
+}
+
+.numar-note {
+}
+
+.note {
+}
+
+.digit {
 }
 
 .button {

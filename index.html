@@ -10,23 +10,29 @@
   <h1>Marire note</h1>
   <div class="viewport">
     <div class="controls">
-      <button id="minus" class="button nav" onclick="back()">-</button>
-      <button id="plus" class="button nav" onclick="fwd()">+</button>
+      <button id="minus" class="button nav" onclick="back()">&lt;</button>
+      <button id="plus" class="button nav" onclick="fwd()">&gt;</button>
     </div>
     <div id="tab1" class="tab tab1">
-      <div class="buget-container">
-      </div>
-      <div class="new-spent">
-      </div>
-      <div class="misc">  
+      <div class="container">
+        <div class="numar-note numar-note-luate">
+        </div>
+        <div class="note note-luate">
+        </div>
       </div>
     </div>
     <div id="tab2" class="tab tab2 disabled">
-      <div class="lista cumparaturi" id="lcumparaturi">
+      <div class="container">
+        <div class="numar-note nr-note-de-luat">
+        </div>
+        <div class="note note-de-luat">
+        </div>
       </div>
     </div>
+    <!--
     <div id="tab3" class="tab tab3 disabled">
     </div>
+    -->
   </div>
   <script src="script.js"></script>
 </body>
