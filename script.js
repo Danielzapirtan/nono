@@ -1,22 +1,9 @@
 const nrNoteLuate = document.getElementById("numar-note-luate");
 const noteLuate = document.getElementById("note-luate");
-const nrNoteDeLuat = document.getElementById("numar-note-de-luat");
+const nrNoteDeLuat = document.getElementById("nr-note-de-luat");
 const noteDeLuat = document.getElementById("note-de-luat");
 
-function calc_medii() { }
-function renderAll() { }
-
 var currtab = 0;
-var sold;
-var db;
-
-function saveToLocalStorage() {
-  const bcv = {
-    sold: sold,
-    db: db,
-  };
-  localStorage.setItem("bc", JSON.stringify(bcv));
-}
 
 function switchTab(tabno) {
   const tab1 = document.getElementById("tab1");
@@ -42,14 +29,14 @@ function addDigit(el, min, max) {
   lt.classList.add("button nav");
   const cifra = document.createElement("div");
   cifra.classList.add("digit");
-  cifra.style.min = min;
-  cifra.style.max = max;
+  cifra.style.min = 7;
+  cifra.style.max = 10;
   cifra.innerHTML = `${6}`;
   const gt = document.createElement("div");
   gt.classList.add("button nav");
   el.appendChild(lt);
-  el.appendChild(gt);
   el.appendChild(cifra);
+  el.appendChild(gt);
 }
 
 function addNumber(el) {
